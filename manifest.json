@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "SellaryToUSD ",
+  "description": "It gives you information about your sellary in USD",
+  "version": "1.0",
+  "content_security_policy": "script-src 'unsafe-eval'; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "dist/index.bundle.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "http://*/*",
+    "https://*/*",
+    "https://openexchangerates.org/*",
+    "http://code.jquery.com/*"
+  ]
+}

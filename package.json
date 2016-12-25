@@ -1,0 +1,30 @@
+{
+  "name": "sellaryplugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server --inline --hot "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://VSCher@bitbucket.org/VSCher/sellaryplugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/VSCher/sellaryplugin#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "node-sass": "4.0.0",
+    "sass-loader": "^4.1.0",
+    "style-loader": "^0.13.1",
+    "webpack": "2.2.0-rc.1",
+    "webpack-dev-server": "2.2.0-rc.0"
+  }
+}
