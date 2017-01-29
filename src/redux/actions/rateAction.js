@@ -23,9 +23,10 @@ function requestRateError(error) {
         error
     };
 }
-export function errorCounter() {
+export function errorCounter(message) {
     return {
         type: REQUEST_RATE_ERROR,
+        message
     };
 }
 

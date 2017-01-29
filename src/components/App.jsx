@@ -92,7 +92,7 @@ export default class App extends React.Component {
     @autobind
     handleClick() {
         this.requestRate();
-        this.props.dispatch(requestRate());
+        this.props.dispatch(errorCounter('11'));
     }
 }
 
