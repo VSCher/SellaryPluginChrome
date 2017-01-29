@@ -23,12 +23,19 @@ function requestRateError(error) {
         error
     };
 }
+export function errorCounter() {
+    return {
+        type: REQUEST_RATE_ERROR,
+    };
+}
 
 export function requestRate() {
     return (dispatch) => {
         dispatch(requestRateStarted());
 
-        request.get('https://shaurma-dimkos.rhcloud.com/locations?page=0&per_page=20');
+        request.get('https://shaurma-dimkos.rhcloud.com/locations?page=0&per_page=20').then(
+
+        );
 
         return setTimeout(() => {
             return dispatch(requestRateFinished(Date.now()));
