@@ -2,7 +2,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: {
-        index: './src/index.js'
+        index: './src/index.jsx'
     },
     output: {
         path: __dirname +'/dist',
@@ -30,4 +30,4 @@ module.exports = {
     },
     devtool: "eval",
     plugins: [new ExtractTextPlugin('bundle.css')]
-}
+};
